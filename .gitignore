@@ -1,0 +1,5 @@
+mono/v*.zip
+mono/Iosevka-*/
+mono/*.ttf
+sans/Inter-*.zip
+sans/*.ttf
