@@ -45,6 +45,9 @@ install -p {mono,sans}/*.ttf %{buildroot}%{_datadir}/fonts/Filotimo/
 %{_datadir}/fonts/Filotimo/FilotimoSans-Regular.ttf
 
 %changelog
+* Sat Mar 22 2025 Thomas Duckworth <tduck@filotimoproject.org> 1.1-1
+- new package built with tito
+
 * Sat Mar 22 2025 Thomas Duckworth <tduck@filotimoproject.org> 1.0-1
 - new package built with tito
 
