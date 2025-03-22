@@ -1,5 +1,5 @@
 Name:           filotimo-fonts
-Version:        1.0
+Version:        1.1
 Release:        1%{?dist}
 Summary:        Fontface for Filotimo Linux
 
@@ -13,6 +13,8 @@ BuildRequires:  fontpackages-devel
 BuildRequires:  nodejs-npm
 BuildRequires:  ttfautohint
 BuildRequires:  python3-devel
+BuildRequires:  python3-pip
+BuildRequires:  curl
 
 %description
 Customised fonts from Filotimo - taken from https://gitlab.gnome.org/GNOME/adwaita-fonts.

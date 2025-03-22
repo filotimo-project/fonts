@@ -16,7 +16,7 @@ die() {
 
 download_source() {
   rm --force "${ARCHIVE}"
-  wget "${BASE_URL}/v${INTER_VERSION}/${ARCHIVE}"
+  curl -fsSLO "${BASE_URL}/v${INTER_VERSION}/${ARCHIVE}"
   echo "${HASH} ${ARCHIVE}" | \
     sha256sum --check --status || die "${ARCHIVE} has invalid checksum"
 }
