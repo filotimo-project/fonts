@@ -40,6 +40,9 @@ install -p sans/*.ttf %{buildroot}%{_datadir}/fonts/Filotimo/
 %{_datadir}/fonts/Filotimo/FilotimoSans-Regular.ttf
 
 %changelog
+* Mon Mar 24 2025 Thomas Duckworth <tduck@filotimoproject.org> 1.2-1
+- Remove mono, IBM Plex Mono is nicer (tduck@filotimoproject.org)
+
 * Sat Mar 22 2025 Thomas Duckworth <tduck@filotimoproject.org> 1.1-1
 - new package built with tito
 
