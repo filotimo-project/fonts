@@ -1,5 +1,5 @@
 Name:           filotimo-fonts
-Version:        1.1
+Version:        1.2
 Release:        1%{?dist}
 Summary:        Fontface for Filotimo Linux
 
@@ -10,7 +10,6 @@ Source:         %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  fontconfig
 BuildRequires:  fontpackages-devel
-BuildRequires:  nodejs-npm
 BuildRequires:  ttfautohint
 BuildRequires:  python3-devel
 BuildRequires:  python3-pip
@@ -31,16 +30,12 @@ export PATH=$HOME/.local/bin:$PATH
 
 %install
 mkdir -p %{buildroot}%{_datadir}/fonts/Filotimo
-install -p {mono,sans}/*.ttf %{buildroot}%{_datadir}/fonts/Filotimo/
+install -p sans/*.ttf %{buildroot}%{_datadir}/fonts/Filotimo/
 
 %files
 %license LICENSE
 %doc README.md
 %dir %{_datadir}/fonts/Filotimo
-%{_datadir}/fonts/Filotimo/FilotimoMono-Bold.ttf
-%{_datadir}/fonts/Filotimo/FilotimoMono-BoldItalic.ttf
-%{_datadir}/fonts/Filotimo/FilotimoMono-Italic.ttf
-%{_datadir}/fonts/Filotimo/FilotimoMono-Regular.ttf
 %{_datadir}/fonts/Filotimo/FilotimoSans-Italic.ttf
 %{_datadir}/fonts/Filotimo/FilotimoSans-Regular.ttf
 
